@@ -4,7 +4,6 @@ from tkinter import *
 def code():
 
     write_code = enter_code.get().upper()
-    # write_code = input("ask? :")
 
     file = pandas.read_csv("cod.csv")
 
@@ -34,16 +33,3 @@ button = Button(text="Convert", width=20, bg="#B6DBF4", command=code)
 button.grid(column=0, row=4, pady=20)
 
 window.mainloop()
-
-
-
-################ OLD VERSION #####################
-
-# file = pandas.read_csv("cod.csv")
-# write_code = input("ask? :").upper()
-#
-# dic = {row.Leter: row.Code for (index, row) in file.iterrows()}
-#
-# result = [dic[Leter] for Leter in write_code]
-#
-# print(result)
